@@ -1,0 +1,15 @@
+POST http://localhost:8080/api/createShortUrl
+Content-Type: application/json
+
+{
+  "originalUrl": "https://www.google.ru/",
+  "expiredAt": "2022-04-21T14:18:13.5999632"
+}
+
+###
+
+GET http://localhost:8080/api/redirect/2db3cdb7
+
+###
+
+GET http://localhost:8080/api/getByShortUrl/2db3cdb7
