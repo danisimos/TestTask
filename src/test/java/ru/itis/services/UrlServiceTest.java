@@ -5,6 +5,7 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
+import org.springframework.test.context.ActiveProfiles;
 import ru.itis.dto.UrlDto;
 import ru.itis.dto.forms.UrlForm;
 import ru.itis.dto.mappers.UrlMapper;
@@ -26,6 +27,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @DisplayName("UrlService working")
+@ActiveProfiles("dev")
 public class UrlServiceTest {
     @MockBean
     private UrlRepository urlRepository;
