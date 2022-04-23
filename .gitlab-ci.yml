@@ -1,5 +1,6 @@
 image: openjdk:17-alpine
 
+
 build:
   stage: build
   script: ./mvnw clean install
